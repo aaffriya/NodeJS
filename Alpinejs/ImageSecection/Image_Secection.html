@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body>
+    <div x-data="{Image: 1}"> <br> <br>
+            <img src="Img\1.jpg" alt="" x-show = "Image===1">
+            <img src="Img\2.jpg" alt="" x-show = "Image===2">
+            <img src="Img\3.jpg" alt="" x-show = "Image===3">
+            <br><br>
+            <button @click = "Image=1">Image 1 </button>
+            <button @click = "Image=2">Image 2  </button>
+            <button @click = "Image=3">Image 3  </button>
+    </div>
+</body>
+</html>

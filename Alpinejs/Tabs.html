@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+</head>
+<body>
+    <div x-data="{tab: 1}">
+        <div>
+            <h1>My Tabs</h1>
+            <button @click = "tab=1">Tab </button>
+            <button @click = "tab=2">Tab </button>
+            <button @click = "tab=3">Tab </button>
+        </div>
+        <div x-show = "tab===1">
+            <p> Tab 1 ===> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis qui mollitia dolor, voluptatibus quia doloribus dignissimos enim explicabo dolorum sunt. Animi rerum laudantium eos inventore laboriosam incidunt possimus, temporibus dicta!
+            </p>
+        </div>
+        <div x-show = "tab===2">
+            <p>
+                Tab 2 ===> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi praesentium enim est exercitationem suscipit quod sit quasi asperiores impedit aut, consequuntur velit obcaecati eum nesciunt laboriosam adipisci dicta ratione autem!
+            </p>
+        </div>
+        <div x-show = "tab===3">
+            <p>
+                Tab 3 ===> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, hic. Aperiam aut earum quasi qui! Sit, ducimus. Dicta, tenetur, pariatur nobis vitae alias minima quia molestiae placeat sequi ratione ex.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
